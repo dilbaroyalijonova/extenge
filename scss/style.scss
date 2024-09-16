@@ -6,9 +6,96 @@
 
 ul,
 li {
+  display: flex;
   list-style: none;
+  gap: 25px;
 }
 
 a {
+  color: rgba(161, 181, 187, 1);
   text-decoration: none;
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+}
+
+body {
+  font-family: inter;
+}
+
+p {
+  font-weight: 400;
+}
+
+.container {
+  padding-left: 375px;
+  margin-right: 375px;
+  width: 1950;
+}
+
+header {
+  background-image: url(../image/Rectangle.png);
+  background-color: rgba(38, 90, 106, 1);
+}
+
+nav {
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn1 {
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  line-height: 33px;
+  font-family: "Inter";
+  padding: 16px 30px 16px 30px;
+  background-color: rgba(9, 69, 86, 1);
+}
+
+.btn2 {
+  @extend .btn1;
+  font-family: "schoolbell";
+  width: 195px;
+  margin-top: 163px;
+  margin-right: 20px;
+}
+
+.btn3 {
+  @extend .btn1;
+  font-family: "Inter";
+  background-color: rgba(255, 166, 58, 1);
+}
+
+.header1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__info h1 {
+  color: white;
+  max-width: 537px;
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+.header__info p {
+  max-width: 511px;
+  font-size: 18px;
+  line-height: 29px;
+  color: 132, 148, 153, 1;
+}
+
+.header___img {
+  position: relative;
+}
+
+.header___img2 {
+  position: absolute;
+  right: 5%;
+  top: 40%;
 }
